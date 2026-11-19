@@ -1,3 +1,21 @@
+/**
+ * Повторяет строку str указанное количество раз.
+ * Дробное количество повторений округляется вниз.
+ * Если count не указан, возвращает пустую строку.
+ *
+ * @param {string} str — строка для повторения
+ * @param {number} [count] — количество повторений
+ * @returns {string} — строка, повторённая указанное количество раз
+ * @throws {TypeError} — если str не строка или count не число
+ * @throws {RangeError} — если count отрицательный
+ *
+ * @example
+ *   repeat('ha', 3); // 'hahaha'
+ *   repeat('abc', 2); // 'abcabc'
+ *   repeat('hello', 0); // ''
+ *   repeat('hello'); // ''
+ */
+
 export function repeat(str, count) {
   if (typeof str !== "string") {
     throw new TypeError("Первый аргумент должен быть строкой");

@@ -1,3 +1,17 @@
+/**
+ * Проверяет, заканчивается ли строка str подстрокой search.
+ *
+ * @param {string} str — исходная строка
+ * @param {string} search — проверяемая подстрока
+ * @returns {boolean} — true если строка заканчивается на search, false если нет
+ * @throws {TypeError} — если любой из аргументов не строка
+ *
+ * @example
+ *   endsWith('hello world', 'world'); // true
+ *   endsWith('hello world', 'hello'); // false
+ *   endsWith('hello', '');            // true
+ */
+
 import { len } from "./len.js";
 import { indexOf } from "./index-of.js";
 
