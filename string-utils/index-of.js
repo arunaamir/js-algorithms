@@ -1,3 +1,17 @@
+/**
+ * Находит первое вхождение подстроки search в строке str.
+ *
+ * @param {string} str — исходная строка
+ * @param {string} search — искомая подстрока
+ * @returns {number} — индекс первого вхождения или -1, если подстрока не найдена
+ * @throws {TypeError} — если любой из аргументов не строка
+ *
+ * @example
+ *   indexOf('hello world', 'world'); // 6
+ *   indexOf('hello', 'x');           // -1
+ *   indexOf('hello', '');            // 0
+ */
+
 import { len } from "./len.js";
 
 export function indexOf(str, search) {
